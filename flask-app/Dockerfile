@@ -1,3 +1,4 @@
+# base image
 FROM python:3.8
 
 # set a directory for the app
@@ -10,7 +11,7 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # tell the port number the container should expose
-EXPOSE 5000
+EXPOSE 5001
 
 # run the command
 CMD ["python", "./app.py"]
