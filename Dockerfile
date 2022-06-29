@@ -1,6 +1,8 @@
 # base image
 FROM python:3.8
 
+LABEL author="Raul Gonzalez"
+
 # set a directory for the app
 WORKDIR /usr/src/app
 
